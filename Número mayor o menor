@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    int mayor, menor;
+
+    cin >> a >> b;
+
+    mayor = a * (a > b) + b * (b > a);
+    menor = a * (a < b) + b * (b < a);
+
+    cout << mayor << endl;
+    cout << menor;
+
+    return 0;
+}
