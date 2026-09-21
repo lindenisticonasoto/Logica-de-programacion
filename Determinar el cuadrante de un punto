@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, y;
+
+    cout << "Ingrese x: ";
+    cin >> x;
+
+    cout << "Ingrese y: ";
+    cin >> y;
+
+    if (x > 0 && y > 0) {
+        cout << "Pertenece al cuadrante I";
+    }
+    else if (x < 0 && y > 0) {
+        cout << "Pertenece al cuadrante II";
+    }
+    else if (x < 0 && y < 0) {
+        cout << "Pertenece al cuadrante III";
+    }
+    else if (x > 0 && y < 0) {
+        cout << "Pertenece al cuadrante IV";
+    }
+    else {
+        cout << "El punto esta sobre un eje o en el origen";
+    }
+
+    return 0;
+}
